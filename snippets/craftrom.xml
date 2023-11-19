@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="craftrom"
+          fetch="https://github.com/craftrom-os"
+          revision="13" />
+  <project path="manifest" name="manifest" remote="craftrom" />
+  <project path="vendor/aosp" name="vendor_aosp" remote="craftrom" />
+</manifest>
