@@ -5,7 +5,7 @@
 ```bash
 
 # Initialize local repository
-repo init -u https://github.com/craftrom-os/manifest -b 13
+repo init -u https://github.com/craftrom-os/manifest -b thrall
 
 # Sync
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags

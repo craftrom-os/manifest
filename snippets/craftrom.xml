@@ -2,7 +2,7 @@
 <manifest>
   <remote name="craftrom"
           fetch="https://github.com/craftrom-os"
-          revision="13" />
+          revision="thrall" />
   <project path="manifest" name="manifest" remote="craftrom" />
   <project path="vendor/aosp" name="vendor_aosp" remote="craftrom" />
 </manifest>
