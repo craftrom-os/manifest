@@ -21,14 +21,15 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-    <!-- External repos -->
-    <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="craftrom" />
-    <project path="packages/overlays/CraftRom" name="packages_overlays_CraftRom" remote="craftrom" />
+  <project path="cts" name="cts" remote="craftrom" />
+  <!-- External repos -->
+  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="craftrom" />
+  <project path="packages/overlays/CraftRom" name="packages_overlays_CraftRom" remote="craftrom" />
 
-    <!-- Packages repos -->
-    <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="craftrom" />
-    <project path="packages/apps/Settings" name="packages_apps_Settings" remote="craftrom" />
-    <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" groups="pdk-fs" remote="craftrom" />
+  <!-- Packages repos -->
+  <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="craftrom" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="craftrom" />
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" groups="pdk-fs" remote="craftrom" />
       
   <!-- System Repos -->
   <project path="system/core" name="system_core" remote="craftrom" />
