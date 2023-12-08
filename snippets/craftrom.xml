@@ -5,4 +5,6 @@
           revision="thrall" />
   <project path="manifest" name="manifest" remote="craftrom" />
   <project path="vendor/aosp" name="vendor_aosp" remote="craftrom" />
+    <!-- Packages repos -->
+      <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="craftrom" />
 </manifest>
