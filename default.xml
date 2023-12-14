@@ -7,9 +7,6 @@
           fetch="https://github.com/" />
   <remote name="gitlab"
           fetch="https://gitlab.com" />
-  <remote name="craftrom"
-          fetch="https://github.com/craftrom-os"
-          revision="thrall" />
   <default revision="refs/tags/android-13.0.0_r75"
            remote="aosp"
            sync-j="4"
