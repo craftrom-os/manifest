@@ -33,5 +33,6 @@
   <!-- System Repos -->
   <project path="system/core" name="system_core" remote="craftrom" />
   <project path="system/sepolicy" name="system_sepolicy" remote="craftrom" />
+  <project path="system/memory/lmkd" name="system_memory_lmkd" remote="craftrom" />
   
 </manifest>
