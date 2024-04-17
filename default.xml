@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/" />
   <default revision="refs/tags/android-14.0.0_r30"
            remote="aosp"
            sync-j="4" />
-
   <superproject name="platform/superproject" remote="aosp" revision="android-14.0.0_r30"/>
   <contactinfo bugurl="go/repo-bug" />
-
   <project path="build/make" name="platform/build" groups="pdk,sysui-studio" >
     <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk" />
     <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default" />
@@ -18,12 +15,12 @@
     <linkfile dest="build/envsetup.sh" src="envsetup.sh" />
     <linkfile dest="build/target" src="target" />
     <linkfile dest="build/tools" src="tools" />
-</project>
+  </project>
   <project path="build/orchestrator" name="platform/build/orchestrator" groups="pdk" />
   <project path="build/bazel" name="platform/build/bazel" groups="pdk" >
     <linkfile dest="WORKSPACE" src="bazel.WORKSPACE" />
     <linkfile dest="BUILD" src="bazel.BUILD" />
-</project>
+  </project>
   <project path="build/bazel_common_rules" name="platform/build/bazel_common_rules" groups="pdk" />
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" />
   <project path="build/pesto" name="platform/build/pesto" groups="pdk" />
@@ -31,7 +28,7 @@
   <project path="build/soong" name="platform/build/soong" groups="pdk,tradefed" >
     <linkfile dest="Android.bp" src="root.bp" />
     <linkfile dest="bootstrap.bash" src="bootstrap.bash" />
-</project>
+  </project>
   <project path="art" name="platform/art" groups="pdk" />
   <project path="bionic" name="platform/bionic" groups="pdk" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
@@ -1001,17 +998,17 @@
   <project path="hardware/qcom/sm7150/gps" name="platform/hardware/qcom/sm7150/gps" groups="qcom_sm7150" >
     <linkfile dest="hardware/qcom/sm7150/Android.mk" src="os_pickup.mk" />
     <linkfile dest="hardware/qcom/sm7150/Android.bp" src="os_pickup.bp" />
-</project>
+  </project>
   <project path="hardware/qcom/sm7250/display" name="platform/hardware/qcom/sm7250/display" groups="qcom_sm7250" />
   <project path="hardware/qcom/sm7250/gps" name="platform/hardware/qcom/sm7250/gps" groups="qcom_sm7250" >
     <linkfile dest="hardware/qcom/sm7250/Android.mk" src="os_pickup.mk" />
     <linkfile dest="hardware/qcom/sm7250/Android.bp" src="os_pickup.bp" />
-</project>
+  </project>
   <project path="hardware/qcom/sm7250/media" name="platform/hardware/qcom/sm7250/media" groups="qcom_sm7250" />
   <project path="hardware/qcom/sm8150/data/ipacfg-mgr" name="platform/hardware/qcom/sm8150/data/ipacfg-mgr" groups="qcom_sm8150" >
     <linkfile dest="hardware/qcom/sm8150/Android.mk" src="os_pickup.mk" />
     <linkfile dest="hardware/qcom/sm8150/Android.bp" src="os_pickup.bp" />
-</project>
+  </project>
   <project path="hardware/qcom/sm8150/display" name="platform/hardware/qcom/sm8150/display" groups="qcom_sm8150" />
   <project path="hardware/qcom/sm8150/gps" name="platform/hardware/qcom/sm8150/gps" groups="qcom_sm8150" />
   <project path="hardware/qcom/sm8150/media" name="platform/hardware/qcom/sm8150/media" groups="qcom_sm8150" />
@@ -1020,7 +1017,7 @@
   <project path="hardware/qcom/sm8150p/gps" name="platform/hardware/qcom/sm8150p/gps" groups="qcom_sm8150p" >
     <linkfile dest="hardware/qcom/sm8150p/Android.mk" src="os_pickup.mk" />
     <linkfile dest="hardware/qcom/sm8150p/Android.bp" src="os_pickup.bp" />
-</project>
+  </project>
   <project path="hardware/qcom/wlan" name="platform/hardware/qcom/wlan" groups="qcom_wlan,pdk-qcom" />
   <project path="hardware/ril" name="platform/hardware/ril" groups="pdk" />
   <project path="hardware/st/nfc" name="platform/hardware/st/nfc" groups="pdk" />
@@ -1372,9 +1369,9 @@
   <project path="tools/tradefederation/prebuilts" name="platform/tools/tradefederation/prebuilts" groups="pdk,tradefed" clone-depth="1" />
   <project path="tools/treble" name="platform/tools/treble" groups="tools,pdk" />
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" />
-
   <!-- PixelOS -->
   <include name="snippets/remove.xml" />
   <include name="snippets/external.xml" />
   <include name="snippets/custom.xml" />
+  <include name="snippets/craftrom.xml" />
 </manifest>

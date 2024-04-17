@@ -1,14 +1,14 @@
-# PixelOS
+# CraftRom OS
 
- Getting Started
----------------
-To get started with the PixelOS sources, you'll need to get
+## Getting Started
+
+To get started with the CraftRom OS sources, you'll need to get
 familiar with [Git and Repo](https://source.android.com/setup/build/downloading).
 
- To initialize your local repository, use command:
+To initialize your local repository, use command:
 
 ```bash
-repo init -u https://github.com/PixelOS-AOSP/manifest.git -b fourteen --git-lfs
+repo init -u https://github.com/craftrom-os/manifest.git -b uther --git-lfs
 ```
 
 Then sync up:
@@ -17,9 +17,9 @@ Then sync up:
 repo sync
 ```
 
-Building the System
--------------------
- Initialize the ROM environment with the envsetup.sh script.
+## Building the System
+
+Initialize the ROM environment with the envsetup.sh script.
 
 ```bash
 . build/envsetup.sh
