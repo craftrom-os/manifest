@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <remote  name="craftrom"
-           fetch="https://github.com/PixelOS-AOSP"
+           fetch="https://github.com/craftrom-os"
            revision="refs/heads/uther" />
     <!-- Vendor -->
     <project path="vendor/aosp" name="vendor_aosp" remote="craftrom" />
