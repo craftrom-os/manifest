@@ -1374,4 +1374,5 @@
   <include name="snippets/external.xml" />
   <include name="snippets/custom.xml" />
   <include name="snippets/craftrom.xml" />
+  <include name="snippets/crdroid.xml" />
 </manifest>
