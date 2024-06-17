@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <!-- CraftRomOS additions -->
-    <project path="android" name="manifest" remote="craftrom" />
-    <project path="vendor/lineage" name="vendor_craftrom" />
+       <remote  name="craftrom"
+           fetch="https://github.com/craftrom-os"
+           sync-c="true"
+           sync-j="4"
+           revision="refs/heads/uther" />
+       <remote  name="blobs-gitlab"
+           fetch="https://gitlab.com/craftrom-os/"
+           revision="uvite" />
+       <!-- CraftRomOS additions -->
+       <project path="manifest" name="manifest" remote="craftrom" />
+       <project path="vendor/lineage" name="vendor_craftrom" remote="craftrom" />
+       <project path="packages/overlays/Lineage" name="packages_overlays_Lineage" remote="craftrom"/>
+       <!-- Vendor (CraftRom) -->
+       <project path="vendor/google/gms" name="android_vendor_google_gms" remote="blobs-gitlab" />
+       <project path="vendor/google/pixel" name="vendor_google_pixel" remote="craftrom" />
+       <project path="vendor/craftrom/prebuilt" name="android_vendor_craftrom_prebuilt" remote="blobs-gitlab" />
 </manifest>
