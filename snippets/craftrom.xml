@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-       <remote  name="craftrom"
-           fetch="https://github.com/craftrom-os"
-           sync-c="true"
-           sync-j="4"
-           revision="refs/heads/uther" />
-       <remote  name="blobs-gitlab"
-           fetch="https://gitlab.com/craftrom-os/"
-           revision="uvite" />
        <!-- CraftRomOS additions -->
        <project path="manifest" name="manifest" remote="craftrom" />
        <project path="vendor/lineage" name="vendor_craftrom" remote="craftrom" />
