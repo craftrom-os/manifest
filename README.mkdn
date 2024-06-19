@@ -14,3 +14,14 @@ Then to sync up:
 ```
 repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
 ```
+
+### Craftrom OS Build Flags
+
+This section contains a list of build flags that allow you to include or exclude specific prebuilts, Runtime Resource Overlays (RROs), and device properties in the Craftrom OS.
+
+**Note:** To configure these flags for a particular device, make the necessary adjustments in the `lineage_codename.mk` file of your device tree.
+
+| Flag                          | Use                                           | Default Value |
+|-------------------------------|-----------------------------------------------|---------------|
+| TARGET_GCAM_SUPPORTED  | Indicates if the target supports Google Camera Go | true |
+
