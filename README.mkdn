@@ -1,21 +1,39 @@
-# CraftRomOS
+# CraftRom OS
 ===========
 
 Getting started
 ---------------
 
-To get started with Android/CraftRomOS, you'll need to get familiar with [Source Control Tools](https://source.android.com/setup/develop).
+To get started with Android/CraftRom OS, you'll need to get familiar with [Source Control Tools](https://source.android.com/setup/develop).
 
-To initialize your local repository using the CraftRomOS trees, use a command like this:
-```
+To initialize your local repository using the CraftRom OS trees, use a command like this:
+```bash
 repo init -u https://github.com/craftrom-os/manifest.git -b uther --git-lfs
 ```
 Then to sync up:
-```
+```bash
 repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
 ```
 
-### Craftrom OS Build Flags
+Building the source
+---------------
+
+The source at CraftRom OS is well configured for building.
+
+**Initiate the build with:**
+```bash
+. build/envsetup.sh
+```
+**Prepare your device with:**
+```bash
+lunch lineage_$device-user
+```
+**Then fire it off with:**
+```bash
+mka craft
+```
+
+### CraftRom OS Build Flags
 
 This section contains a list of build flags that allow you to include or exclude specific prebuilts, Runtime Resource Overlays (RROs), and device properties in the Craftrom OS.
 
