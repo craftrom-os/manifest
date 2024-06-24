@@ -26,7 +26,7 @@ The source at CraftRom OS is well configured for building.
 ```
 **Prepare your device with:**
 ```bash
-lunch lineage_$device-user
+lunch lineage_$device-ap2a-userdebug
 ```
 **Then fire it off with:**
 ```bash
