@@ -24,15 +24,9 @@ The source at CraftRom OS is well configured for building.
 ```bash
 . build/envsetup.sh
 ```
-**Then fire it off with:**
-```bash
-breakfast $device
-```
-
-**Alternative variant!**
 **Prepare your device with:**
 ```bash
-lunch lineage_$device-ap2a-userdebug
+breakfast $device
 ```
 **Then fire it off with:**
 ```bash
