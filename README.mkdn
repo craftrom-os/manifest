@@ -15,6 +15,58 @@ Then to sync up:
 repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
 ```
 
+Preparing your system to build
+---------------
+
+**Installing git:
+```bash
+sudo apt install git
+```
+Running configuration script:
+```bash
+cd ~/
+git clone https://github.com/akhilnarang/scripts
+cd scripts
+./setup/android_build_env.sh
+```
+**Create the directories**
+You’ll need to set up some directories in your build environment.
+To create them:
+
+```bash
+mkdir -p ~/bin
+mkdir -p ~/android/craft
+```
+
+The ~/bin directory will contain the git-repo tool (commonly named “repo”) and the ~/android/craft directory will contain the source code of CraftRom OS.
+
+**Install the repo command**
+Enter the following to download the repo binary and make it executable (runnable):
+
+```bash
+curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+chmod a+x ~/bin/repo
+```
+
+**Put the ~/bin directory in your path of execution**
+In recent versions of Ubuntu, ~/bin should already be in your PATH. You can check this by opening ~/.profile with a text editor and verifying the following code exists (add it if it is missing):
+
+```
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+```
+Then, run source ~/.profile to update your environment.
+
+**Configure git**
+Given that repo requires you to identify yourself to sync Android, run the following commands to configure your git identity:
+
+```bash
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+```
+
 Building the source
 ---------------
 
